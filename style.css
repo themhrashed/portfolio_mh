@@ -32,17 +32,20 @@ body {
   gap: 0.5rem;
   margin-top: -3rem;
 }
-@media screen and (max-width:768px){
-    .HireMe{
-        margin-top: 2rem;
-    }
+@media screen and (max-width: 768px) {
+  .HireMe {
+    margin-top: 2rem;
+  }
 }
 .HireMe a {
   font-size: 1.2rem;
 }
 .HireMe button {
   font-size: 1rem;
-  background-color: rgba(92, 236, 63, 0.507);
+  background-color: white;
+}
+.HireMe button a {
+  color: black;
 }
 .navList {
   display: flex;
@@ -50,12 +53,12 @@ body {
   gap: 2.5rem;
   margin-top: 2rem;
 }
-@media screen and (max-width:768px){
-    .navBar{
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem;
-    }
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 }
 .navButton {
   display: flex;
@@ -86,10 +89,10 @@ body {
   width: 1280px;
   animation: SlideFromLeft 3s ease forwards;
 }
-@media screen and (max-width:768px){
-    .HeroSection{
-        margin-top: 1rem;
-    }
+@media screen and (max-width: 768px) {
+  .HeroSection {
+    margin-top: 1rem;
+  }
 }
 .HeroSection p {
   font-size: 1.2rem;
@@ -109,16 +112,16 @@ body {
 }
 .heroSvg {
   margin: 0 auto;
-  margin-top: 16.5rem;
+  margin-top: 14.8rem;
   width: 1280px;
   animation: slideFromRight 4s ease forwards;
 }
 
-@media screen and (max-width:320px){
-    .heroSvg img{
-        margin-left: -60rem;
-        width: 500px;
-    }
+@media screen and (max-width: 320px) {
+  .heroSvg img {
+    margin-left: -60rem;
+    width: 500px;
+  }
 }
 @keyframes slideFromRight {
   0% {
@@ -130,3 +133,108 @@ body {
     transform: translateX(0);
   }
 }
+
+.expContainer {
+  overflow: hidden;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.expimg {
+  width: 1280px;
+  margin: 0 auto;
+  margin-bottom: -3rem;
+  animation: slideFromRightexp forwards 5s ease;
+}
+
+@keyframes slideFromRightexp {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.skills {
+  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.one {
+  animation: 3s ease sun-rise;
+}
+@keyframes sun-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(110vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.two {
+  animation: 4s ease sun-rise;
+}
+@keyframes sun-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(110vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.three {
+  animation: 5s ease sun-rise;
+}
+@keyframes sun-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(110vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.four {
+  animation: 6s ease sun-rise;
+}
+
+@keyframes sun-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(110vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.skills img {
+  width: 15rem;
+  height: 15rem;
+}
+
+@media screen and (max-width: 320px) {
+  .expContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
