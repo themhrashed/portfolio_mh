@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+body {
+  height: 100vh;
+  text-align: center;
+  padding: 0.1rem;
+}
+.navContainer {
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: black;
+}
+.navBar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+.HireMe {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: -3rem;
+}
+@media screen and (max-width:768px){
+    .HireMe{
+        margin-top: 2rem;
+    }
+}
+.HireMe a {
+  font-size: 1.2rem;
+}
+.HireMe button {
+  font-size: 1rem;
+  background-color: rgba(92, 236, 63, 0.507);
+}
+.navList {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width:768px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}
+.navButton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  text-align: end;
+}
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  text-align: end;
+}
+.socialLinks img {
+  width: 10px;
+  height: 10px;
+}
+.HeroContainer {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: black;
+}
+.HeroSection {
+  margin-top: 3rem;
+  margin: 0 auto;
+  width: 1280px;
+  animation: SlideFromLeft 3s ease forwards;
+}
+@media screen and (max-width:768px){
+    .HeroSection{
+        margin-top: 1rem;
+    }
+}
+.HeroSection p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: start;
+}
+
+@keyframes SlideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.heroSvg {
+  margin: 0 auto;
+  margin-top: 16.5rem;
+  width: 1280px;
+  animation: slideFromRight 4s ease forwards;
+}
+
+@media screen and (max-width:320px){
+    .heroSvg img{
+        margin-left: -60rem;
+        width: 500px;
+    }
+}
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
